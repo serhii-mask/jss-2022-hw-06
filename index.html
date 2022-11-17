@@ -362,50 +362,50 @@
 	<div class="backdrop is-hidden" data-modal>
 			<div class="modal">
 				<button class="modal-close" data-modal-close>
-					<svg class="close-icon" width="11" height="11">
+					<svg class="icon close-icon" width="18" height="18">
 						<use href="./images/sprite.svg#icon-close"></use>
 					</svg>
 				</button>
 				<form class="form js-speaker-form">
 					<b class="modal-title">Залиште свої дані, ми вам передзвонимо</b>
 
-					<div class="form-field">
-						<label for="name">Ім'я</label>
-						<input class="modal-input" type="text" name="name" id="name" placeholder="">
-						<svg class="icon user-icon" width="12" height="12">
+					<label class="form-field">
+						<span class="modal-label">Ім'я</span>
+						<input class="modal-input" type="text" name="name" placeholder="">
+						<svg class="icon user-icon" width="18" height="18">
 							<use href="./images/sprite.svg#icon-user"></use>
 						</svg>
-					</div>
+					</label>
 
-					<div class="form-field">
-						<label for="tel">Телефон</label>
-						<input class="modal-input" type="tel" name="tel" id="tel" placeholder="">
-						<svg class="icon tel-icon" width="13" height="13">
+					<label class="form-field">
+						<span class="modal-label">Телефон</span>
+						<input class="modal-input" type="tel" name="tel" placeholder="">
+						<svg class="icon tel-icon" width="18" height="18">
 							<use href="./images/sprite.svg#icon-tel"></use>
 						</svg>
-					</div>
+					</label>
 
-					<div class="form-field">
-						<label for="mail">Пошта</label>
-						<input class="modal-input" type="email" name="mail" id="mail" placeholder="">
-						<svg class="icon post-icon" width="15" height="12">
+					<label class="form-field">
+						<span class="modal-label">Пошта</span>
+						<input class="modal-input" type="email" name="mail" placeholder="">
+						<svg class="icon post-icon" width="18" height="18">
 							<use href="./images/sprite.svg#icon-post"></use>
 						</svg>
-					</div>
+					</label>
 
-					<div class="form-field">
-						<label for="comment">Коментар</label>
-						<textarea class="modal-input" name="comment" id="comment" rows="10" placeholder="Введіть текст" placeholder=""></textarea>
-					</div>
+					<label class="form-field">
+						<span class="modal-label">Коментар</span>
+						<textarea class="modal-input" name="comment" rows="10" placeholder="Введіть текст" placeholder=""></textarea>
+					</label>
 
-					<div class="checkbox">
-						<input type="checkbox" name="police" id="police">
-						<label for="police">Погоджуюся з розсилкою та приймаю <a href="" class="modal-link">Умови договору</a></label>
-					</div>
+					<label class="checkbox">
+						<input type="checkbox" name="police" placeholder="">
+						<span>Погоджуюся з розсилкою та приймаю <a href="" class="modal-link">Умови договору</a></span>
+					</label>
 
-					<div class="modal-button">
+					<label class="modal-btn-submit">
 						<button type="submit">Відправити</button>
-					</div>
+					</label>
 				</form>
 			</div>
 	</div>

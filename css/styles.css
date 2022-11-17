@@ -740,6 +740,9 @@ color: var(--title-text-color);
 	right: 8px;
 	width: 30px;
 	height: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	border: 1px solid rgba(0, 0, 0, 0.1);;
 	border-radius: 50%;
 	background-color: #fff;
@@ -779,7 +782,7 @@ color: var(--title-text-color);
 	flex-direction: column;
 }
 
-.form-field label {
+.modal-label {
 	margin: 0;
 	margin-bottom: 4px;
 	font-size: 12px;
@@ -795,9 +798,7 @@ color: var(--title-text-color);
 	resize: none;
 }
 
-.modal-input:hover,
 .modal-input:focus,
-.modal-input:hover ~ .icon,
 .modal-input:focus ~ .icon {
 	border-color: var(--accent-color);
 	fill: var(--accent-color);
@@ -815,22 +816,10 @@ color: var(--title-text-color);
 	height: 120px;
 }
 
-.user-icon {
+.form-field .icon {
 	position: absolute;
-	top: 32px;
-	left: 15px;
-}
-
-.tel-icon {
-	position: absolute;
-	top: 31.26px;
-	left: 14.27px;
-}
-
-.post-icon {
-	position: absolute;
-	top: 32px;
-	left: 13.5px;
+	top: 29px;
+	left: 12px;
 }
 
 .checkbox {
@@ -847,14 +836,6 @@ color: var(--title-text-color);
 	text-decoration: underline;
 }
 
-.checkbox label {
-
-}
-
-.checkbox input {
-	border-color: var(--title-text-color);
-}
-
 .checkbox input[type='checkbox'] {
 	width: 16px;
 	height: 15px;
@@ -866,7 +847,12 @@ color: var(--title-text-color);
 	align-items: center;
 }
 
-.modal-button button {
+.modal-btn-submit {
+	display: flex;
+	justify-content: center;
+}
+
+.modal-btn-submit button {
 	padding: 10px 52px;
 	font-weight: 700;
 	font-size: 16px;
